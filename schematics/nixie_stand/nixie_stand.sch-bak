@@ -1,0 +1,312 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 604693BF
+P 3900 3850
+F 0 "J1" H 3818 3425 50  0000 C CNN
+F 1 "Conn_01x04" H 3818 3516 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 3900 3850 50  0001 C CNN
+F 3 "~" H 3900 3850 50  0001 C CNN
+	1    3900 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 6046A057
+P 4050 2000
+F 0 "J2" H 4130 1992 50  0000 L CNN
+F 1 "Conn_01x02" H 4130 1901 50  0000 L CNN
+F 2 "Connector_PinSocket_2.00mm:PinSocket_1x02_P2.00mm_Vertical" H 4050 2000 50  0001 C CNN
+F 3 "~" H 4050 2000 50  0001 C CNN
+	1    4050 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 6046A86F
+P 4050 2800
+F 0 "J3" H 4130 2792 50  0000 L CNN
+F 1 "Conn_01x02" H 4130 2701 50  0000 L CNN
+F 2 "Connector_PinSocket_2.00mm:PinSocket_1x02_P2.00mm_Vertical" H 4050 2800 50  0001 C CNN
+F 3 "~" H 4050 2800 50  0001 C CNN
+	1    4050 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 60473FF2
+P 3800 2700
+F 0 "#PWR0101" H 3800 2550 50  0001 C CNN
+F 1 "+5V" H 3815 2873 50  0000 C CNN
+F 2 "" H 3800 2700 50  0001 C CNN
+F 3 "" H 3800 2700 50  0001 C CNN
+	1    3800 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 604747FD
+P 3800 2950
+F 0 "#PWR0102" H 3800 2700 50  0001 C CNN
+F 1 "GND" H 3805 2777 50  0000 C CNN
+F 2 "" H 3800 2950 50  0001 C CNN
+F 3 "" H 3800 2950 50  0001 C CNN
+	1    3800 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 60474DEF
+P 3800 2150
+F 0 "#PWR0103" H 3800 1900 50  0001 C CNN
+F 1 "GND" H 3805 1977 50  0000 C CNN
+F 2 "" H 3800 2150 50  0001 C CNN
+F 3 "" H 3800 2150 50  0001 C CNN
+	1    3800 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 604771BA
+P 4875 3250
+F 0 "#PWR0104" H 4875 3100 50  0001 C CNN
+F 1 "+5V" H 4890 3423 50  0000 C CNN
+F 2 "" H 4875 3250 50  0001 C CNN
+F 3 "" H 4875 3250 50  0001 C CNN
+	1    4875 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 60478B66
+P 4875 4975
+F 0 "#PWR0105" H 4875 4725 50  0001 C CNN
+F 1 "GND" H 4880 4802 50  0000 C CNN
+F 2 "" H 4875 4975 50  0001 C CNN
+F 3 "" H 4875 4975 50  0001 C CNN
+	1    4875 4975
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #170V0101
+U 1 1 6047DBBC
+P 3800 1900
+F 0 "#170V0101" H 3750 2150 50  0000 L CNN
+F 1 "VCC" H 3750 2050 50  0000 L CNN
+F 2 "" H 3800 1900 50  0001 C CNN
+F 3 "" H 3800 1900 50  0001 C CNN
+	1    3800 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #170V0102
+U 1 1 6047F24C
+P 6600 1700
+F 0 "#170V0102" H 6550 1950 50  0000 L CNN
+F 1 "VCC" H 6550 1850 50  0000 L CNN
+F 2 "" H 6600 1700 50  0001 C CNN
+F 3 "" H 6600 1700 50  0001 C CNN
+	1    6600 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2000 3800 2000
+Wire Wire Line
+	3800 2000 3800 1900
+Wire Wire Line
+	3850 2100 3800 2100
+Wire Wire Line
+	3800 2100 3800 2150
+Wire Wire Line
+	3800 2700 3800 2800
+Wire Wire Line
+	3800 2800 3850 2800
+Wire Wire Line
+	3850 2900 3800 2900
+Wire Wire Line
+	3800 2900 3800 2950
+$Comp
+L z574m:Z574M V1
+U 1 1 6046432A
+P 6600 2350
+F 0 "V1" H 6600 2700 50  0000 C CNN
+F 1 "Z574M" H 6600 2450 50  0000 C CNN
+F 2 "nixie_footprint:nixie_z574m" H 6600 2350 50  0001 C CNN
+F 3 "" H 6600 2350 50  0001 C CNN
+	1    6600 2350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 1700 6600 1750
+Wire Wire Line
+	6250 2075 5625 2075
+Wire Wire Line
+	5700 3750 5700 2200
+Wire Wire Line
+	5700 2200 6250 2200
+Wire Wire Line
+	6250 2350 5775 2350
+Wire Wire Line
+	5775 2350 5775 3850
+Wire Wire Line
+	6250 2500 5850 2500
+Wire Wire Line
+	5850 2500 5850 3950
+Wire Wire Line
+	5925 4050 5925 2650
+Wire Wire Line
+	5925 2650 6250 2650
+Wire Wire Line
+	7075 4150 7075 2650
+Wire Wire Line
+	7075 2650 6950 2650
+Wire Wire Line
+	7150 4250 7150 2500
+Wire Wire Line
+	7150 2500 6950 2500
+Wire Wire Line
+	7225 4350 7225 2350
+Wire Wire Line
+	7225 2350 6950 2350
+Wire Wire Line
+	7300 4450 7300 2200
+Wire Wire Line
+	7300 2200 6950 2200
+Wire Wire Line
+	7375 4550 7375 2075
+Wire Wire Line
+	7375 2075 6950 2075
+$Comp
+L 74xx:74LS145 U1
+U 1 1 604CBEF4
+P 4875 4050
+F 0 "U1" H 4500 4750 50  0000 C CNN
+F 1 "74LS145" H 4525 4650 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 4875 4050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS145" H 4875 4050 50  0001 C CNN
+	1    4875 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4875 4975 4875 4850
+Wire Wire Line
+	4875 3350 4875 3250
+Wire Wire Line
+	4100 3650 4375 3650
+Wire Wire Line
+	4100 3750 4375 3750
+Wire Wire Line
+	4100 3850 4375 3850
+Wire Wire Line
+	4100 3950 4375 3950
+Wire Wire Line
+	5625 2075 5625 3650
+Wire Wire Line
+	5625 3650 5375 3650
+Wire Wire Line
+	5700 3750 5375 3750
+Wire Wire Line
+	5375 3850 5775 3850
+Wire Wire Line
+	5850 3950 5375 3950
+Wire Wire Line
+	5375 4050 5925 4050
+Wire Wire Line
+	5375 4150 7075 4150
+Wire Wire Line
+	7150 4250 5375 4250
+Wire Wire Line
+	7225 4350 5375 4350
+Wire Wire Line
+	7300 4450 5375 4450
+Wire Wire Line
+	7375 4550 5375 4550
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 604F8D53
+P 7900 2250
+F 0 "H3" V 7854 2400 50  0000 L CNN
+F 1 "MountingHole_Pad" V 7945 2400 50  0000 L CNN
+F 2 "" H 7900 2250 50  0001 C CNN
+F 3 "~" H 7900 2250 50  0001 C CNN
+	1    7900 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 604F9262
+P 7900 2500
+F 0 "H4" V 7854 2650 50  0000 L CNN
+F 1 "MountingHole_Pad" V 7945 2650 50  0000 L CNN
+F 2 "" H 7900 2500 50  0001 C CNN
+F 3 "~" H 7900 2500 50  0001 C CNN
+	1    7900 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 604F95D0
+P 7900 2000
+F 0 "H2" V 7854 2150 50  0000 L CNN
+F 1 "MountingHole_Pad" V 7945 2150 50  0000 L CNN
+F 2 "" H 7900 2000 50  0001 C CNN
+F 3 "~" H 7900 2000 50  0001 C CNN
+	1    7900 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 604F9BF0
+P 7900 1750
+F 0 "H1" V 7854 1900 50  0000 L CNN
+F 1 "MountingHole_Pad" V 7945 1900 50  0000 L CNN
+F 2 "" H 7900 1750 50  0001 C CNN
+F 3 "~" H 7900 1750 50  0001 C CNN
+	1    7900 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60514F36
+P 7700 2625
+F 0 "#PWR?" H 7700 2375 50  0001 C CNN
+F 1 "GND" H 7705 2452 50  0000 C CNN
+F 2 "" H 7700 2625 50  0001 C CNN
+F 3 "" H 7700 2625 50  0001 C CNN
+	1    7700 2625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 1750 7700 1750
+Wire Wire Line
+	7700 1750 7700 2000
+Wire Wire Line
+	7800 2000 7700 2000
+Connection ~ 7700 2000
+Wire Wire Line
+	7700 2000 7700 2250
+Wire Wire Line
+	7800 2250 7700 2250
+Connection ~ 7700 2250
+Wire Wire Line
+	7700 2250 7700 2500
+Wire Wire Line
+	7800 2500 7700 2500
+Connection ~ 7700 2500
+Wire Wire Line
+	7700 2500 7700 2625
+$EndSCHEMATC

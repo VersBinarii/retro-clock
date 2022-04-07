@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "nixie_stand-rescue")(type "Legacy")(uri "${KIPRJMOD}/nixie_stand-rescue.lib")(options "")(descr ""))
+)
